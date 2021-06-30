@@ -329,6 +329,9 @@ html, body {
     background-color: rgba(64, 68, 32, 0.061);
 }
 
+.skills-row{
+    margin-top: 18px;
+}
 
 /* Section: Services */
 .section-services {
