@@ -310,7 +310,7 @@ html, body {
 }
 
 .progress-bar {
-    background-color: #212121;  
+    background-color: #212121da;  
 }
 
 .skill-tabs a {
@@ -325,10 +325,9 @@ html, body {
     background-color:transparent;
 }
 
-.tab-content{
-    margin-top: 30px;
+.nav-pills .btn.active{
+    background-color: rgba(64, 68, 32, 0.061);
 }
-
 
 
 /* Section: Services */
