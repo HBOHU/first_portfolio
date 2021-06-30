@@ -318,13 +318,15 @@ html, body {
 
 }
 
-
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
     color: #000;
     border-bottom: transparent;
     background-color:transparent;
 }
 
+.tab-content{
+    margin-top: 30px;
+}
 
 
 
