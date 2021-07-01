@@ -27,13 +27,15 @@ $(function () {
     /* Progress bar */
     var $section = $('.section-skills');
 // FIXME: ------------------------------------------------------------------------------------------------------------
-    // $(".btn:not(.active)").click(function () {
-    //     $('.progress-bar').progressbar("value", 0);
-    // });
+    
+    $(".btn:not(.active)").click(function () {
+        $(".progress-bar").addClass("notransition");
+        $('.progress-bar').attr('style', "width: 0%");
+    });
 
     $(".btn").click(function () {
         $('.progress-bar').progressbar({
-            transition_delay: 500
+            transition_delay: 40
         });
     });
 
