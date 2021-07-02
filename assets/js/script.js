@@ -1,5 +1,4 @@
 $(function () {
-
     $('.navbar-toggle').click(function () {
         $(this).toggleClass('act');
         if ($(this).hasClass('act')) {
@@ -26,8 +25,7 @@ $(function () {
 
     /* Progress bar */
     var $section = $('.section-skills');
-// FIXME: ------------------------------------------------------------------------------------------------------------
-    
+
     $(".btn:not(.active)").click(function () {
         $(".progress-bar").addClass("notransition");
         $('.progress-bar').attr('style', "width: 0%");
@@ -77,19 +75,14 @@ $(function () {
         $this.countTo(options);
     }
 
-    // Navigation overlay
-    var s = skrollr.init({
-        forceHeight: false,
-        smoothScrolling: false,
-        mobileDeceleration: 0.004,
-        mobileCheck: function () {
-            //hack - forces mobile version to be off
-            return false;
-        }
-    });
-
 });
 
+
+// Mail form
+//------------------------------------------------------------------------------------------------------------------------
+
+
+// TypeWriter
 class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
       this.txtElement = txtElement;

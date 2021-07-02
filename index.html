@@ -347,20 +347,20 @@
 
                 <h3>Contact</h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form>
+                <form id="mail_form">
                     <div class="row">
                         <div class="col-sm-6">
-                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
+                            <input type="text" id="name" class="form-control mt-x-0" placeholder="Name" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            <input type="email" id="mail" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="col-sm-12">
-                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message"
+                            <textarea id="message" class="form-control" placeholder="Message"
                                 required></textarea>
                         </div>
                     </div>
-                    <button href="#" class="btn btn-border" type="submit">Send &nbsp<span
+                    <button id="form-button" class="btn btn-border">Send &nbsp<span
                             class="glyphicon glyphicon-send"></span></button>
                 </form>
             </div>
@@ -388,6 +388,9 @@
             </div>
         </div>
     </footer><!-- /#footer -->
+
+
+
 
     <!-- Modals -->
     <div id="portfolioItem4" class="modal fade" role="dialog">
