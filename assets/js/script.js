@@ -88,11 +88,11 @@ function sendMail() {
     };
     emailjs.send('service_icap7vg', 'template_siyx4gr', tempParams)
     .then(function(res){
-        $(':input','#mail_form')
-        .not(':button, :submit, :reset, :hidden')
-        .val('');
         if (res.status == 200){
             console.log("succes", res.status);
+            $(':input','#mail_form')
+            .not(':button, :submit, :reset, :hidden')
+            .val('');
         }
         else {
             // not succes
