@@ -25,20 +25,19 @@ $(function () {
     });
 
     /* Progress bar */
-    var $section = $('.section-skills');
-// FIXME: ------------------------------------------------------------------------------------------------------------
     
     $(".btn:not(.active)").click(function () {
         $(".progress-bar").addClass("notransition");
         $('.progress-bar').attr('style', "width: 0%");
     });
-
+    
     $(".btn").click(function () {
         $('.progress-bar').progressbar({
             transition_delay: 40
         });
     });
-
+    
+    var $section = $('.section-skills');
     $(document).bind('scroll', function (ev) {
         var scrollOffset = $(document).scrollTop();
         var containerOffset = $section.offset().top - window.innerHeight;
