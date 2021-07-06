@@ -34,6 +34,14 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- Mail service -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_wWV3poxtsA8rusB3hVe0X");
+})();
+</script>
 </head>
 
 <body>
@@ -347,21 +355,21 @@
 
                 <h3>Contact</h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form>
+                <form id="mail_form">
                     <div class="row">
                         <div class="col-sm-6">
-                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
+                            <input type="text" id="name" class="form-control mt-x-0" placeholder="Name" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            <input type="email" id="mail" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="col-sm-12">
-                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message"
+                            <textarea id="message" class="form-control" placeholder="Message"
                                 required></textarea>
                         </div>
                     </div>
-                    <button href="#" class="btn btn-border" type="submit">Send &nbsp<span
-                            class="glyphicon glyphicon-send"></span></button>
+                    <button id="send-mail" onclick="sendMail()" class="btn btn-border">Send &nbsp
+                        <span class="glyphicon glyphicon-send"></span></button>
                 </form>
             </div>
         </section><!-- /.section-form -->
@@ -388,6 +396,9 @@
             </div>
         </div>
     </footer><!-- /#footer -->
+
+
+
 
     <!-- Modals -->
     <div id="portfolioItem4" class="modal fade" role="dialog">

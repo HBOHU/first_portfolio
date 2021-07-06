@@ -1,5 +1,4 @@
 $(function () {
-
     $('.navbar-toggle').click(function () {
         $(this).toggleClass('act');
         if ($(this).hasClass('act')) {
@@ -25,7 +24,8 @@ $(function () {
     });
 
     /* Progress bar */
-    
+    var $section = $('.section-skills');
+
     $(".btn:not(.active)").click(function () {
         $(".progress-bar").addClass("notransition");
         $('.progress-bar').attr('style', "width: 0%");
@@ -76,19 +76,33 @@ $(function () {
         $this.countTo(options);
     }
 
-    // Navigation overlay
-    var s = skrollr.init({
-        forceHeight: false,
-        smoothScrolling: false,
-        mobileDeceleration: 0.004,
-        mobileCheck: function () {
-            //hack - forces mobile version to be off
-            return false;
-        }
-    });
-
 });
 
+
+// Mail form
+//------------------------------------------------------------------------------------------------------------------------
+function sendMail() {
+    var tempParams = {
+        from_name : document.getElementById("name").value,
+        from_mail : document.getElementById("mail").value,
+        message : document.getElementById("message").value,
+    };
+    emailjs.send('service_icap7vg', 'template_siyx4gr', tempParams)
+    .then(function(res){
+        if (res.status == 200){
+            console.log("succes", res.status);
+            $(':input','#mail_form')
+            .not(':button, :submit, :reset, :hidden')
+            .val('');
+        }
+        else {
+            // not succes
+        }
+
+    });
+};
+
+// TypeWriter
 class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
       this.txtElement = txtElement;
