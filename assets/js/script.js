@@ -81,8 +81,9 @@ $(function () {
 
 // Mail form
 //------------------------------------------------------------------------------------------------------------------------
-function sendMail() {
-    var tempParams = {
+$("#send_mail_button").click( function () {
+    console.log("hit")
+    let tempParams = {
         from_name : document.getElementById("name").value,
         from_mail : document.getElementById("mail").value,
         message : document.getElementById("message").value,
@@ -91,7 +92,7 @@ function sendMail() {
     .then(function(res){
         if (res.status == 200){
             console.log("succes", res.status);
-            $(':input','#mail_form')
+            $(':input','.form-control')
             .not(':button, :submit, :reset, :hidden')
             .val('');
         }
@@ -99,8 +100,7 @@ function sendMail() {
             // not succes
         }
 
-    });
-};
+    })});
 
 // TypeWriter
 class TypeWriter {
@@ -159,7 +159,7 @@ class TypeWriter {
   
   
   // Init On DOM Load
-  document.addEventListener('DOMContentLoaded', init);
+//   document.addEventListener('DOMContentLoaded', init);
   
   // Init App
   function init() {
