@@ -75,6 +75,13 @@ $(function () {
         $this.countTo(options);
     }
 
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+
+
 });
 
 
