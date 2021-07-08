@@ -79,7 +79,7 @@ $(function () {
         openEffect: "none",
         closeEffect: "none"
     });
-    
+
 
 
 });
@@ -99,7 +99,7 @@ function sendMail() {
         .not(':button, :submit, :reset, :hidden')
         .val('');
         if (res.status == 200){
-            console.log("succes", res.status);
+            console.log("succesfull send via mailjs.");
         }
         else {
             // not succes
