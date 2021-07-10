@@ -1,4 +1,20 @@
 {
+    "projects": [{
+        "title": "HBO-i",
+        "subTitle": "domain description of all ICT studies in the Netherlands",
+        "link": "should be optional",
+        "img": "assets/img/portofolio/hbo-i.png"
+    }, {
+        "title": "webTank",
+        "subTitle": "domain description of all ICT studies in the Netherlands",
+        "link": "should be optional",
+        "img": "assets/img/portofolio/webtank.jpg"
+    }, {
+        "title": "QR card",
+        "subTitle": "domain description of all ICT studies in the Netherlands",
+        "link": "should be optional",
+        "img": "assets/img/portofolio/qr-card.png"
+    }],
     "skillbars": [{
         "title": "Creative",
         "bars": [{
@@ -59,21 +75,5 @@
             "name": "Bootstrap",
             "value": 70
         }]
-    }],
-    "projects": [{
-        "title": "HBO-i",
-        "subTitle": "domain description of all ICT studies in the Netherlands",
-        "link": "should be optional",
-        "img": "assets/img/Portfolio-6.png"
-    }, {
-        "title": "webTank",
-        "subTitle": "domain description of all ICT studies in the Netherlands",
-        "link": "should be optional",
-        "img": "assets/img/Portfolio-5.jpg"
-    }, {
-        "title": "QR card",
-        "subTitle": "domain description of all ICT studies in the Netherlands",
-        "link": "should be optional",
-        "img": "assets/img/Portfolio-3.png"
     }]
 }

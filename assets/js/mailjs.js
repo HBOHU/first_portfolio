@@ -10,9 +10,9 @@ function sendMail() {
                 .not(':button, :submit, :reset, :hidden')
                 .val('');
             if (res.status == 200) {
-                console.log("succesfull send via mailjs.");
+                $("#mailButton").addClass("btn-success");
             } else {
-                // not succes
+                $("#mailButton").addClass("btn-danger");
             }
         });
 };

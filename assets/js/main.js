@@ -69,8 +69,6 @@ $(function () {
         });
     });
 
-    /* Skill bars */
-
     
     /* Insert HTML from JSON file */
     fetch("assets/js/data.json")
