@@ -64,16 +64,16 @@
         "title": "HBO-i",
         "subTitle": "domain description of all ICT studies in the Netherlands",
         "link": "should be optional",
-        "img-path": "give me a path"
+        "img": "assets/img/Portfolio-6.png"
     }, {
         "title": "webTank",
         "subTitle": "domain description of all ICT studies in the Netherlands",
         "link": "should be optional",
-        "img-path": "give me a path"
+        "img": "assets/img/Portfolio-6.png"
     }, {
         "title": "QR-card",
         "subTitle": "domain description of all ICT studies in the Netherlands",
         "link": "should be optional",
-        "img-path": "give me a path"
+        "img": "assets/img/Portfolio-6.png"
     }]
 }

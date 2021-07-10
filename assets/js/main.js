@@ -58,21 +58,6 @@ $(function () {
 
 
     /* Skill bars */
-    fetch("assets/js/data.json")
-    .then(response => response.json()
-    .then(data => {
-        data["skillbars"].forEach(skillTab => {
-            $(".nav-pills").append(`<li class="btn"><a href="#${skillTab.title}" data-toggle="tab"> ${skillTab.title} </a></li >`);
-            $(".tab-content").append(`<div role="tabpanel" class="tab-pane" id="${skillTab.title}"></div>`);
-            $(`#${skillTab.title}`).append(`<div id="${skillTab.title}"class="row skills-row"></div>`);
-            skillTab.bars.forEach(bar => {
-                $(`#${skillTab.title}`).append(`<div class="col-md-4"> <div class="skill"> <h4>${bar.name}</h4> <div class="progress"> <div class="progress-bar" role="progressbar" data-transitiongoal=${bar.value}> </div> </div> </div> </div>`);
-            })
-        })
-    }))
-
-    // Since json file holding information these funcitons arent working properly??
-    
     $(".btn:not(.active)").click(function () {
         $(".progress-bar").addClass("notransition");
         $('.progress-bar').attr('style', "width: 0%");
@@ -84,6 +69,31 @@ $(function () {
         });
     });
 
+    /* Skill bars */
+
+    
+    /* Insert HTML from JSON file */
+    fetch("assets/js/data.json")
+    .then(response => response.json()
+    .then(data => {
+        // Since json file holding information progressbar functions arent working properly??
+        data["skillbars"].forEach(skillTab => {
+            $(".nav-pills").append(`<li class="btn"><a href="#${skillTab.title}" data-toggle="tab"> ${skillTab.title} </a></li >`);
+            $(".tab-content").append(`<div role="tabpanel" class="tab-pane" id="${skillTab.title}"></div>`);
+            $(`#${skillTab.title}`).append(`<div id="${skillTab.title}"class="row skills-row"></div>`);
+            skillTab.bars.forEach(bar => {
+                $(`#${skillTab.title}`).append(`<div class="col-md-4"> <div class="skill"> <h4>${bar.name}</h4> <div class="progress"> <div class="progress-bar" role="progressbar" data-transitiongoal=${bar.value}> </div> </div> </div> </div>`);
+            })
+        })
+        // For some reason there has to be hardcoded one active class in order to work
+        let index = 0
+        data["projects"].forEach(project => {
+            $(".carousel-indicators").append(`<li data-target="#carousel-portofolio" data-slide-to="${index}"></li>`);
+            $(".carousel-inner").append(`<div class="item"><img src="${project.img}" herf="${project.link}"><div class="carousel-caption"><h3>${project.title}</h3><p>${project.subTitle}</p></div></div>`);
+            index++;
+            
+        })
+    }))
 
 
 });
