@@ -23,17 +23,6 @@ $(function () {
         offset: 5
     });
 
-    /* Skill bars */
-    $(".btn:not(.active)").click(function () {
-        $(".progress-bar").addClass("notransition");
-        $('.progress-bar').attr('style', "width: 0%");
-    });
-
-    $(".btn").click(function () {
-        $('.progress-bar').progressbar({
-            transition_delay: 40
-        });
-    });
 
     /* Counters  */
     if ($(".section-counters .start").length > 0) {
@@ -66,8 +55,35 @@ $(function () {
         options = $.extend({}, options || {}, $this.data('countToOptions') || {});
         $this.countTo(options);
     }
-    
 
 
+    /* Skill bars */
+    fetch("assets/js/data.json")
+    .then(response => response.json()
+    .then(data => {
+        data["skillbars"].forEach(skillTab => {
+            $(".nav-pills").append(`<li class="btn"><a href="#${skillTab.title}" data-toggle="tab"> ${skillTab.title} </a></li >`);
+            $(".tab-content").append(`<div role="tabpanel" class="tab-pane" id="${skillTab.title}"></div>`);
+            $(`#${skillTab.title}`).append(`<div id="${skillTab.title}"class="row skills-row"></div>`);
+            skillTab.bars.forEach(bar => {
+                $(`#${skillTab.title}`).append(`<div class="col-md-4"> <div class="skill"> <h4>${bar.name}</h4> <div class="progress"> <div class="progress-bar" role="progressbar" data-transitiongoal=${bar.value}> </div> </div> </div> </div>`);
+            })
+        })
+    }))
+
+    // Since json file holding information these funcitons arent working properly???
     
+    $(".btn:not(.active)").click(function () {
+        $(".progress-bar").addClass("notransition");
+        $('.progress-bar').attr('style', "width: 0%");
+    });
+
+    $(".btn").click(function () {
+        $('.progress-bar').progressbar({
+            transition_delay: 40
+        });
+    });
+
+
+
 });
