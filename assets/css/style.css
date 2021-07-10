@@ -171,7 +171,9 @@ html, body {
 }
 
 .site-logo img {
-    padding-bottom: 2px;
+    position: fixed;
+    margin-left: 5vw;
+    z-index: 10;
 }
 
 /* Navigation */
@@ -614,3 +616,12 @@ a.icon-up-bg:hover {color: #212121;}
 button.btn.btn-border {
     margin-top: 15vh;
 }
+
+.carousel-caption {
+    color: #000;
+    text-shadow: 5px 10px 10px rgb(255, 255, 255),
+    -3px 10px 12px rgba(0, 0, 0, 0.75);
+
+}
+
+.site-logo
