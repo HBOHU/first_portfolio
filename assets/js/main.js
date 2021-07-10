@@ -71,7 +71,7 @@ $(function () {
         })
     }))
 
-    // Since json file holding information these funcitons arent working properly???
+    // Since json file holding information these funcitons arent working properly??
     
     $(".btn:not(.active)").click(function () {
         $(".progress-bar").addClass("notransition");
