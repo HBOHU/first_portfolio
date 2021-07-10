@@ -286,13 +286,9 @@ html, body {
     margin-bottom: 35px;
 }
 
-/* Section: Skills */
+/* Section: Skills ---empty section---*/
 .section-skills {
     padding-bottom: 120px;
-}
-
-.skill + .skill {
-    margin-top: 50px;
 }
 
 .skill h4 {
@@ -307,6 +303,7 @@ html, body {
     border-radius: 0;
     background-color: #dfdfdf;
     box-shadow: none;
+    margin-bottom: 25px;
 }
 
 .progress-bar {

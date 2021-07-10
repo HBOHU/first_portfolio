@@ -1,0 +1,79 @@
+{
+    "skillbars": [{
+        "title": "Creative",
+        "bars": [{
+            "name": "Photography",
+            "value": 80
+        }, {
+            "name": "UX-design",
+            "value": 70
+        }, {
+            "name": "Ideas",
+            "value": 100
+        }]
+    }, {
+        "title": "Front-end",
+        "bars": [{
+            "name": "JavaScript",
+            "value": 70
+        }, {
+            "name": "CSS",
+            "value": 40
+        }, {
+            "name": "HTML",
+            "value": 60
+        }]
+    }, {
+        "title": "Back-end",
+        "bars": [{
+            "name": "Python",
+            "value": 80
+        }, {
+            "name": "c++",
+            "value": 60
+        }, {
+            "name": "Dart",
+            "value": 50
+        }]
+    }, {
+        "title": "Frameworks",
+        "bars": [{
+            "name": "Nodejs",
+            "value": 80
+        }, {
+            "name": "Dangjo",
+            "value": 60
+        }, {
+            "name": "Fask",
+            "value": 80
+        }, {
+            "name": "openCV",
+            "value": 60
+        }, {
+            "name": "Vue",
+            "value": 50
+        }, {
+            "name": "Flutter",
+            "value": 40
+        }, {
+            "name": "Bootstrap",
+            "value": 70
+        }]
+    }],
+    "projects": [{
+        "title": "HBO-i",
+        "subTitle": "domain description of all ICT studies in the Netherlands",
+        "link": "should be optional",
+        "img-path": "give me a path"
+    }, {
+        "title": "webTank",
+        "subTitle": "domain description of all ICT studies in the Netherlands",
+        "link": "should be optional",
+        "img-path": "give me a path"
+    }, {
+        "title": "QR-card",
+        "subTitle": "domain description of all ICT studies in the Netherlands",
+        "link": "should be optional",
+        "img-path": "give me a path"
+    }]
+}
