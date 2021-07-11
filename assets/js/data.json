@@ -16,7 +16,7 @@
         "img": "assets/img/portofolio/qr-card.png"
     }],
     "skillbars": [{
-        "title": "Creative",
+        "tab": "Creative",
         "bars": [{
             "name": "Photography",
             "value": 80
@@ -28,7 +28,7 @@
             "value": 100
         }]
     }, {
-        "title": "Front-end",
+        "tab": "Front-end",
         "bars": [{
             "name": "JavaScript",
             "value": 70
@@ -40,7 +40,7 @@
             "value": 60
         }]
     }, {
-        "title": "Back-end",
+        "tab": "Back-end",
         "bars": [{
             "name": "Python",
             "value": 80
@@ -52,7 +52,7 @@
             "value": 50
         }]
     }, {
-        "title": "Frameworks",
+        "tab": "Frameworks",
         "bars": [{
             "name": "Nodejs",
             "value": 80

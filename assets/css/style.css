@@ -249,7 +249,6 @@ body {
     margin: 15px 0 40px;
 }
 
-
 /* Section: Skills ---empty section---*/
 .section-skills {
     padding-bottom: 120px;
@@ -258,7 +257,9 @@ body {
 .skill h4 {
     font-size: 24px;
     text-transform: uppercase;
-    margin: 0 0 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-decoration: ;
 }
 
 .skill-tabs a {
@@ -329,7 +330,6 @@ body {
     margin-bottom: 0;
 }
 
-
 /* Section: Counters */
 .section-counters {
     background: url(../img/counters-bg.jpg) no-repeat fixed center / cover;
@@ -367,7 +367,12 @@ body {
 }
 
 .section-form .btn {
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.form-section {
+    margin-top: 18vh;
 }
 
 
@@ -380,40 +385,27 @@ body {
     font-size: 24px;
 }
 
-.form-section {
-    margin-top: 15vh;
-}
 
-#mail_form {
-    padding-top: 5vh;
-}
-
-button.btn.btn-border {
-    margin-top: 15vh;
-}
-
-.carousel-caption {
-    color: #000;
-    text-shadow: 5px 10px 10px rgb(255, 255, 255),
-        -3px 10px 12px rgba(0, 0, 0, 0.75);
-
-}
 /* Skillbar */
 .meter {
     box-sizing: content-box;
-    margin-bottom: 2vh;
     height: 15px; /* Can be anything */
     position: relative;
     background: rgba(0, 0, 0, 0.15);
-  }
-  .meter > span {
+}
+.meter > span {
     display: block;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     
     position: relative;
     overflow: hidden;
-  }
+}
 
-  
-  
+/* Carousel */
+.carousel-caption {
+    color: #000;
+    text-shadow: 5px 10px 10px rgb(255, 255, 255),
+        -3px 10px 12px rgba(0, 0, 0, 0.75);
+
+}

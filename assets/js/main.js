@@ -63,12 +63,11 @@ $(function () {
             .then(data => {
                 // Skill bars
                 // Since json file holding information progressbar functions arent working properly??
-                data["skillbars"].forEach(skillTab => {
-                    $(".nav-pills").append(`<li class="btn"><a href="#${skillTab.title}" data-toggle="tab"> ${skillTab.title} </a></li >`);
-                    $(".tab-content").append(`<div role="tabpanel" class="tab-pane" id="${skillTab.title}"></div>`);
-                    $(`#${skillTab.title}`).append(`<div id="${skillTab.title}"class="row skills-row"></div>`);
-                    skillTab.bars.forEach(bar => {
-                        $(`#${skillTab.title}`).append(`<div class="col-md-4"><div class="skill"> <h4>${bar.name}</h4><div class="meter"><span style="width: ${bar.value}%"></span></div></div></div> </div>`);
+                data["skillbars"].forEach(skillData => {
+                    $(".nav-pills").append(`<li class="btn"><a href="#${skillData.tab}" data-toggle="tab"> ${skillData.tab} </a></li >`);
+                    $(".tab-content").append(`<div role="tabpanel" class="tab-pane" id="${skillData.tab}"></div>`);
+                   skillData.bars.forEach(bar => {
+                        $(`#${skillData.tab}`).append(`<div class="col-md-4"><div class="skill"> <h4>${bar.name}</h4><div class="meter"><span style="width: ${bar.value}%"></span></div></div></div> </div>`);
                     })
                 })
                 // Portofolio carousel
