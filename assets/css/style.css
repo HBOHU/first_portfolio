@@ -6,8 +6,6 @@
  * Version: 1.0
  * */
 
-
-
 /* CUSTOM RESETS
 ================================================== */
 a {
@@ -336,6 +334,7 @@ body {
     width: 100%;
     padding: 100px 0;
     position: relative;
+    margin-top: 10vh;
 }
 
 .section-counters:before {
@@ -368,7 +367,7 @@ body {
 
 .section-form .btn {
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .form-section {
@@ -408,4 +407,9 @@ body {
     text-shadow: 5px 10px 10px rgb(255, 255, 255),
         -3px 10px 12px rgba(0, 0, 0, 0.75);
 
+
+}
+
+.carousel-inner >h3 {
+    margin-top: 2vh;
 }
